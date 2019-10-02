@@ -11,3 +11,97 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bob-head {
+  height: 100px;
+}
+
+.center-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #CE8064, #77ABCF);
+  padding: 50px 100px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-style: bold;
+  text-shadow: 2px 2px 4px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  margin: 5px;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.button-anim {
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+.quote-text {
+  font-size: 22px;
+}
+
+.author-text {
+  font-size: 15px;
+}
+
+footer {
+  padding-left: 20px;
+  text-shadow: 2px 2px 4px;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  background: grey;
+  color: white;
+}
+
+#tweet-quote,
+#new-quote {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#tweet-quote {
+  margin-left: 10px;
+}
+
+#new-quote:hover {
+  transform: translateY(6px);
+}
+
+#tweet-quote:hover {
+  transform: translateY(6px);
+}
