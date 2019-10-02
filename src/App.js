@@ -104,9 +104,8 @@ class App extends React.Component {
   render() {
     return (
       <div id="quote-box" className="center-div">
-        {" "}
         Random Quote Machine <hr />
-        <Text quote={this.state.content} author={this.state.author} />{" "}
+        <Text quote={this.state.content} author={this.state.author} />
         <Buttons
           handleNewQuote={this.newQuote}
           quote={this.state.content}
@@ -125,12 +124,10 @@ class Text extends React.Component {
     return (
       <div>
         <h1 id="text" class="quote-text button-anim">
-          {" "}
-          "{this.props.quote}"{" "}
-        </h1>{" "}
+          "{this.props.quote}"
+        </h1>
         <h2 id="author" class="author-text button-anim">
-          {" "}
-          - {this.props.author}{" "}
+          - {this.props.author}
         </h2>
       </div>
     );
@@ -148,22 +145,15 @@ class Buttons extends React.Component {
           type="button"
           id="new-quote"
           className="btn btn-success"
-          onClick={this.props.handleNewQuote}
-        >
-          {" "}
-          New Quote{" "}
-        </button>{" "}
-        <button className="btn btn-info" id="tweet-quote">
-          {" "}
-          <a
+          onClick={this.props.handleNewQuote}>
+      New Quote
+        </button>
+        <a
             target="_blank"
             rel="noreferrer noopener"
             href={`https://twitter.com/intent/tweet/?text=${this.props.quote} - ${this.props.author}`}
-          >
-            {" "}
+          ><button className="btn btn-info" id="tweet-quote">Tweet Quote</button>
           </a>
-          Tweet Quote{" "}
-        </button>{" "}
       </div>
     );
   }
