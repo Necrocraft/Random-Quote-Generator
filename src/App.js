@@ -148,11 +148,10 @@ class Buttons extends React.Component {
           onClick={this.props.handleNewQuote}>
       New Quote
         </button>
-        <a
-            target="_blank"
+        <a target="_blank"
             rel="noreferrer noopener"
-            href={`https://twitter.com/intent/tweet/?text=${this.props.quote} - ${this.props.author}`}
-          ><button className="btn btn-info" id="tweet-quote">Tweet Quote</button>
+            href={`https://twitter.com/intent/tweet/?text=${this.props.quote} - ${this.props.author}`}>
+          <button className="btn btn-info" id="tweet-quote">Tweet Quote</button>
           </a>
       </div>
     );
